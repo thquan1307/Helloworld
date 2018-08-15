@@ -6,6 +6,12 @@ public class Helloworld {
 		int a = 5;
 		int b = 6;
 		int tong = a + b;
-		System.out.println(tong);		
+		int hieu = a - b;
+		int tich = a * b;
+		float thuong = a / b;
+		System.out.println(tong);
+		System.out.println(hieu);
+		System.out.println(tich);
+		System.out.println(thuong);
 	}
 }
