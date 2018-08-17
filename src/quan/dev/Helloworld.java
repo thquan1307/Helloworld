@@ -2,10 +2,26 @@ package quan.dev;
 
 public class Helloworld {
 	public static void main(String[] args) {
-		System.out.println("Hello world");
-		int a = 5;
-		int b = 6;
-		int tong = a + b;
-		System.out.println(tong);		
+		double a = 3;
+		double b = 2;
+		double c = 5;
+		double delta;
+		double x1, x2;
+		delta = (b*b) - (4*a*c);
+		if (delta < 0){
+			System.out.println("Phuong trinh vo nghiem");
+		}
+		
+		if (delta > 0){
+			x1 = (-b+Math.sqrt(delta)) / (2*a);
+			x2 = (-b-Math.sqrt(delta)) / (2*a);
+			System.out.println("x1 = " + x1);
+			System.out.println("x2 = " + x2);
+		}
+		
+		if (delta == 0) {
+			x1 = -b / (2*a);
+			System.out.println("Phuong trinh co nghiem kep x = " + x1);
+		}
 	}
 }
