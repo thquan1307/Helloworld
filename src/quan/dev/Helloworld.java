@@ -2,26 +2,12 @@ package quan.dev;
 
 public class Helloworld {
 	public static void main(String[] args) {
-		double a = 3;
-		double b = 2;
-		double c = 5;
-		double delta;
-		double x1, x2;
-		delta = (b*b) - (4*a*c);
-		if (delta < 0){
-			System.out.println("Phuong trinh vo nghiem");
-		}
-		
-		if (delta > 0){
-			x1 = (-b+Math.sqrt(delta)) / (2*a);
-			x2 = (-b-Math.sqrt(delta)) / (2*a);
-			System.out.println("x1 = " + x1);
-			System.out.println("x2 = " + x2);
-		}
-		
-		if (delta == 0) {
-			x1 = -b / (2*a);
-			System.out.println("Phuong trinh co nghiem kep x = " + x1);
+		System.out.println("BANG CUU CHUONG");
+		for(int i = 1; i <= 9; i++) {
+			for(int j = 1; j <= 9; j++) {
+				System.out.print(j + "*" + i  + "=" +  (i*j) + "\t");
+			}
+			System.out.println("");
 		}
 	}
 }
